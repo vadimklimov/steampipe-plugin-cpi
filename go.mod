@@ -4,7 +4,7 @@ go 1.24.2
 
 require (
 	github.com/hashicorp/go-hclog v1.6.3
-	github.com/panjf2000/ants/v2 v2.11.2
+	github.com/panjf2000/ants/v2 v2.11.3
 	github.com/turbot/steampipe-plugin-sdk/v5 v5.11.5
 	golang.org/x/oauth2 v0.29.0
 	resty.dev/v3 v3.0.0-beta.2
