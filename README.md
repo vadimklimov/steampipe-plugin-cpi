@@ -1,3 +1,5 @@
+![Steampipe + SAP Cloud Integration](docs/cpi-social-graphic.png)
+
 # SAP Cloud Integration plugin for Steampipe
 
 Use SQL to query artifacts from SAP Cloud Integration.
@@ -9,39 +11,26 @@ Use SQL to query artifacts from SAP Cloud Integration.
 
 ## Quick start
 
-### Install
-
 Install the plugin with [Steampipe](https://steampipe.io):
 
 ```shell
 steampipe plugin install vadimklimov/cpi
 ```
 
-Set up the configuration file `~/.steampipe/config/cpi.spc` as described in [the documentation](docs/index.md#configuration).
+Configure your [credentials](https://hub.steampipe.io/plugins/turbot/cpi#credentials) and [config file](https://hub.steampipe.io/plugins/turbot/cpi#configuration).
 
-Run Steampipe:
-
-```shell
-steampipe query
-```
 
 Run a query to list integration packages in an SAP Cloud Integration tenant:
 
 ```sql
-select name, version, vendor, mode from cpi_integration_package
+select
+  name,
+  version,
+  vendor,
+  mode
+from
+  cpi_integration_package;
 ```
-
-## Engines
-
-This plugin is available for the following engines:
-
-| Engine                                                                   | Description                                                                                                                                                                                                                                                                                                                                                                               |
-| ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Steampipe](https://steampipe.io/docs)                                   | The Steampipe CLI exposes APIs and services as a high-performance relational database, giving you the ability to write SQL-based queries to explore dynamic data. Mods extend Steampipe's capabilities with dashboards, reports, and controls built with simple HCL. The Steampipe CLI is a turnkey solution that includes its own Postgres database, plugin management, and mod support. |
-| [Postgres FDW](https://steampipe.io/docs/steampipe_postgres/overview)    | Steampipe Postgres FDWs are native Postgres Foreign Data Wrappers that translate APIs to foreign tables. Unlike Steampipe CLI, which ships with its own Postgres server instance, the Steampipe Postgres FDWs can be installed in any supported Postgres database version.                                                                                                                |
-| [SQLite Extension](https://steampipe.io/docs//steampipe_sqlite/overview) | Steampipe SQLite Extensions provide SQLite virtual tables that translate your queries into API calls, transparently fetching information from your API or service as you request it.                                                                                                                                                                                                      |
-| [Export](https://steampipe.io/docs/steampipe_export/overview)            | Steampipe Plugin Exporters provide a flexible mechanism for exporting information from cloud services and APIs. Each exporter is a stand-alone binary that allows you to extract data using Steampipe plugins without a database.                                                                                                                                                         |
-| [Turbot Pipes](https://turbot.com/pipes/docs)                            | Turbot Pipes is the only intelligence, automation & security platform built specifically for DevOps. Pipes provide hosted Steampipe database instances, shared dashboards, snapshots, and more.                                                                                                                                                                                           |
 
 ## Developing
 
