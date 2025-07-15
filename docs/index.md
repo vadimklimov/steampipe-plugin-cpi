@@ -2,7 +2,7 @@
 organization: vadimklimov
 category: ["paas"]
 icon_url: "/images/plugins/vadimklimov/cpi.svg"
-brand_color: "#0070F2"
+brand_color: "#008FD3"
 display_name: "SAP Cloud Integration"
 short_name: "cpi"
 description: "Steampipe plugin for querying artifacts from SAP Cloud Integration."
@@ -28,7 +28,7 @@ from
   cpi_integration_package;
 ```
 
-```text
+```
 +------------------------------------------------------------------------+---------+--------------+--------------+
 | name                                                                   | version | vendor       | mode         |
 +------------------------------------------------------------------------+---------+--------------+--------------+
@@ -40,7 +40,7 @@ from
 
 ## Documentation
 
-- **[Table definitions & examples →](tables)**
+- **[Table definitions & examples →](/plugins/vadimklimov/cpi/tables)**
 
 ## Get started
 
