@@ -1,6 +1,6 @@
 module github.com/vadimklimov/steampipe-plugin-cpi
 
-go 1.24.6
+go 1.25.0
 
 require (
 	github.com/hashicorp/go-hclog v1.6.3
