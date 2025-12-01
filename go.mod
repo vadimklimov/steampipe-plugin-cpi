@@ -7,7 +7,7 @@ require (
 	github.com/panjf2000/ants/v2 v2.11.3
 	github.com/turbot/steampipe-plugin-sdk/v5 v5.13.1
 	golang.org/x/oauth2 v0.33.0
-	resty.dev/v3 v3.0.0-beta.3
+	resty.dev/v3 v3.0.0-beta.4
 )
 
 require (
