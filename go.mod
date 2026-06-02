@@ -5,7 +5,7 @@ go 1.26.0
 require (
 	github.com/hashicorp/go-hclog v1.6.3
 	github.com/panjf2000/ants/v2 v2.12.1
-	github.com/turbot/steampipe-plugin-sdk/v5 v5.14.0
+	github.com/turbot/steampipe-plugin-sdk/v5 v5.14.1
 	golang.org/x/oauth2 v0.36.0
 	resty.dev/v3 v3.0.0-beta.6
 )
